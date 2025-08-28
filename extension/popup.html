@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vocabulary</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, Segoe UI, Arial, sans-serif; }
+    body { width: 360px; margin: 0; padding: 10px; }
+    .top { display:flex; gap:8px; align-items:center; margin-bottom:8px; }
+    #status { font-size:12px; opacity:.7; }
+    #search { flex:1; padding:6px 8px; border:1px solid #ddd; border-radius:8px; }
+    button { padding:6px 10px; border:0; border-radius:8px; cursor:pointer; }
+    #btn-refresh { background:#111; color:#fff; }
+    #btn-export { background:#f2f2f2; }
+    ul { list-style:none; padding:0; margin:0; max-height:420px; overflow:auto; }
+    li { padding:8px; border-bottom:1px solid #eee; }
+    li:hover { background:#fafafa; }
+    .row { display:flex; gap:8px; }
+    .l { flex:1; min-width:0; }
+    .txt { font-weight:600; }
+    .trn { opacity:.9; }
+    .meta { font-size:11px; opacity:.6; margin-top:2px; }
+    .del { background:#ffe5e5; }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <input id="search" placeholder="Ara (kelime/çeviri)" />
+    <button id="btn-refresh" title="Yenile">Yenile</button>
+    <a id="btn-export" class="button" href="http://localhost:8787/export.csv" target="_blank">CSV</a>
+  </div>
+  <div id="status"></div>
+  <ul id="list"></ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>

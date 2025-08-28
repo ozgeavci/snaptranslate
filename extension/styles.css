@@ -1,0 +1,11 @@
+
+body { font-family: system-ui, Arial, sans-serif; font-size: 14px; margin: 0; padding: 0; }
+.container { padding: 12px; min-width: 320px; }
+h1 { font-size: 16px; margin: 0 0 8px; }
+h2 { font-size: 14px; margin: 12px 0 6px; }
+label { display: block; margin: 8px 0 4px; }
+input { width: 100%; padding: 8px; margin: 4px 0 8px; box-sizing: border-box; }
+button { padding: 8px 10px; cursor: pointer; }
+#status { margin: 6px 0; color: green; }
+ul { list-style: none; padding: 0; }
+li { margin-bottom: 8px; }
