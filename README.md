@@ -26,25 +26,26 @@ extension/          # Chrome Extension
 
 ## Backend Lite
 
-Bu sürüm Windows'ta Visual Studio Build Tools gerektirmez. Verileri `vocab.json` dosyasında tutar.
+This version does not require Visual Studio Build Tools on Windows.  
+It stores vocabulary data in `vocab.json`.
 
-### Çalıştırma
+### Run
 ```bash
 cd backend-lite
 npm i
 npm start
 ```
-- Sunucu: `http://localhost:8787`  
+- Server: `http://localhost:8787`  
 - Vocabulary data is stored in `backend-lite/vocab.json`
 
-### Ortam değişkenleri (opsiyonel)
-- `API_KEY` — `Authorization: Bearer <API_KEY>` ister.  
-- `LT_URL` — LibreTranslate endpoint (varsayılan: https://libretranslate.de/translate)
+### Environment variables (optional)
+- `API_KEY` — requires Authorization: Bearer <API_KEY> header 
+- `LT_URL` — LibreTranslate endpoint (default: https://libretranslate.de/translate)
 
-### Endpointler
+### Endpoints
 - `POST /translate` — `{ text, targetLang, sourceLangHint } → { translation }`  
 - `POST /vocab` — `{ text, translation, targetLang, sourceUrl } → { id }`  
-- `GET /vocab` — son kayıtlar  
+- `GET /vocab` — returns recent items
 
 ---
 
