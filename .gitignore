@@ -1,0 +1,15 @@
+﻿node_modules/
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+dist/
+out/
+coverage/
+
+backend-lite/vocab.json
